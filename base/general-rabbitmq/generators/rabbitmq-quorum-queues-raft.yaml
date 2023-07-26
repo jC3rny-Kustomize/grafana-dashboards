@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -rabbitmq-quorum-queues-raft
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - rabbitmq-quorum-queues-raft.json=./files/rabbitmq-quorum-queues-raft.json

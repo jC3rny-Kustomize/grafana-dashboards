@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -nginx-ingress-controller-nextgen
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - nginx-ingress-controller-nextgen.json=./files/nginx-ingress-controller-nextgen.json

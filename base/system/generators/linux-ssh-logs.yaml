@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -linux-ssh-logs
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - linux-ssh-logs.json=./files/linux-ssh-logs.json

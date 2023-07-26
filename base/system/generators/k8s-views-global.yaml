@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -k8s-views-global
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - k8s-views-global.json=./files/k8s-views-global.json

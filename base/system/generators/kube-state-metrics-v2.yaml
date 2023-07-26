@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -kube-state-metrics-v2
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - kube-state-metrics-v2.json=./files/kube-state-metrics-v2.json

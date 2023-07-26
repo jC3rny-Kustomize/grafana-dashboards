@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -rabbitmq-erlang-distributions-compare
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - rabbitmq-erlang-distributions-compare.json=./files/rabbitmq-erlang-distributions-compare.json

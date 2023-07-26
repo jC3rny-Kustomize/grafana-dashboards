@@ -1,0 +1,14 @@
+---
+
+apiVersion: builtin
+kind: LabelTransformer
+metadata:
+  name: grafana-dashboard
+
+labels:
+  app.kubernetes.io/component: dashboard
+  grafana_dashboard: "1"
+
+fieldSpecs:
+  - path: metadata/labels
+    create: true

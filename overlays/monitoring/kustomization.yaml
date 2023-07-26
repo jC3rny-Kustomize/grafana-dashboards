@@ -1,0 +1,29 @@
+---
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+buildMetadata: [ managedByLabel ]
+
+namespace: grafana
+
+
+resources:
+  - ../../base/monitoring
+
+
+transformers:
+  - ./transformers/annotations.yaml
+  - ./transformers/label.yaml
+  - ./transformers/prefixSuffix.yaml
+
+
+# patches:
+#   - target:
+#       version: v1
+#       kind: ConfigMap
+#       name: (.*-cert-manager-?.*|.*-external-dns-?.*|.*-goldpinger-?.*|.*-loki-?.*|.*-nginx-ingress-controller-?.*|.*-prometheus-?.*|.*-sealed-secrets-?.*|.*-x509-certificate-exporter-?.*)
+#     patch: |
+#       - op: add
+#         path: /metadata/annotations/grafana_dashboard_folder
+#         value: "Monitoring"

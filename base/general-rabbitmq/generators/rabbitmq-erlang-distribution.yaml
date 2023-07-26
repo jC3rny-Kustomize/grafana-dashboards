@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -rabbitmq-erlang-distribution
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - rabbitmq-erlang-distribution.json=./files/rabbitmq-erlang-distribution.json

@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -rabbitmq-erlang-memory-allocators
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - rabbitmq-erlang-memory-allocators.json=./files/rabbitmq-erlang-memory-allocators.json

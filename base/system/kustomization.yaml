@@ -1,0 +1,24 @@
+---
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+generators:
+  - ./generators/k8s-etcd-dashboard.yaml
+  # - ./generators/k8s-etcd-overview.yaml
+  - ./generators/k8s-events-view.yaml
+  - ./generators/k8s-pod-logs.yaml
+  # - ./generators/k8s-pod-metrics.yaml
+  - ./generators/k8s-pod-overview.yaml
+  - ./generators/k8s-storage-volumes-cluster.yaml
+  - ./generators/k8s-storage-volumes-namespace.yaml
+  - ./generators/k8s-system-api-server.yaml
+  - ./generators/k8s-system-coredns.yaml
+  - ./generators/k8s-view-resources.yaml
+  - ./generators/k8s-views-global.yaml
+  - ./generators/k8s-views-namespaces.yaml
+  - ./generators/k8s-views-nodes.yaml
+  - ./generators/k8s-views-pods.yaml
+  - ./generators/kube-state-metrics-v2.yaml
+  - ./generators/linux-ssh-logs.yaml
+  - ./generators/node-exporter-full.yaml

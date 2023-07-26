@@ -1,0 +1,16 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -node-exporter-full
+
+options:
+  labels: {}
+  annotations:
+    argocd.argoproj.io/sync-options: Replace=true
+
+  disableNameSuffixHash: true
+
+files:
+  - node-exporter-full.json=./files/node-exporter-full.json

@@ -1,0 +1,24 @@
+---
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+generators:
+  - ./generators/argocd-dashboard.yaml
+  - ./generators/cert-manager-mixin.yaml
+  - ./generators/external-dns.yaml
+  - ./generators/goldpinger-cluster.yaml
+  - ./generators/loki-global-metrics.yaml
+  - ./generators/loki-promtail-2-4-x.yaml
+  - ./generators/loki-promtail-2-6-x.yaml
+  - ./generators/loki-stack-monitoring.yaml
+  - ./generators/nginx-ingress-controller-nextgen.yaml
+  - ./generators/nginx-ingress-controller-request-handling-performance.yaml
+  - ./generators/nginx-ingress-controller.yaml
+  # - ./generators/nginx-service-mesh.yaml
+  # - ./generators/nginx-web-analytics.yaml
+  - ./generators/prometheus-alertmanager.yaml
+  - ./generators/prometheus-blackbox_exporter.yaml
+  - ./generators/prometheus-overview.yaml
+  - ./generators/sealed-secrets.yaml
+  - ./generators/x509-certificate-exporter.yaml

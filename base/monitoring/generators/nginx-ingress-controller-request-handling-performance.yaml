@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -nginx-ingress-controller-request-handling-performance
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - nginx-ingress-controller-request-handling-performance.json=./files/nginx-ingress-controller-request-handling-performance.json

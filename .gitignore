@@ -1,0 +1,8 @@
+# ignore TMP folder
+**/tmp/**
+
+# ignore backup files
+**/*.bak
+
+# ignore Kustomize cache
+**/.charts/*.tgz

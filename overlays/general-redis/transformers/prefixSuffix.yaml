@@ -1,0 +1,11 @@
+---
+
+apiVersion: builtin
+kind: PrefixSuffixTransformer
+metadata:
+  name: grafana-dashboard
+
+prefix: grafana-dashboards
+
+fieldSpecs:
+  - path: metadata/name

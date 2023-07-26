@@ -1,0 +1,14 @@
+---
+
+apiVersion: builtin
+kind: AnnotationsTransformer
+metadata:
+  name: grafana-dashboard-folder
+
+annotations:
+  grafana_dashboard_folder: System
+
+fieldSpecs:
+  - kind: ConfigMap
+    path: metadata/annotations
+    create: true

@@ -1,0 +1,15 @@
+---
+
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: -prometheus-blackbox-exporter
+
+options:
+  labels: {}
+  annotations: {}
+
+  disableNameSuffixHash: true
+
+files:
+  - prometheus-blackbox_exporter.json=./files/prometheus-blackbox_exporter.json
